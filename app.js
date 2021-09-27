@@ -8,6 +8,7 @@ app.use(cors())
 app.use(bodyParser.json())
 
 const router = require('./routes/posts.js')
+//middleware
 app.use('/', (req, res, next) => {
   console.log('hello remote friend')
   next()
